@@ -27,11 +27,6 @@ struct Position {
     bool operator!=(const Position& other) const {
         return !(*this == other);
     }
-
-    bool operator<(const Position& other) const {
-        if (x != other.x) return x < other.x;
-        return y < other.y;
-    }
 };
 
 template <typename T>
